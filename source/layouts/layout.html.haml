@@ -1,0 +1,13 @@
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %meta{:content => "Chattermill", :name => "description"}/
+    %meta{:content => "", :name => "author"}/
+    %title Chattermill | Text Analytics for the rest of us
+    = stylesheet_link_tag "normalize", "all"
+    = stylesheet_link_tag "http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css"
+    = javascript_include_tag  "all"
+  %body{data: {spy: "scroll", offset: "0", target: "#h"}}
+    = yield

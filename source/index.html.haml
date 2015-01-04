@@ -1,0 +1,167 @@
+#h
+  .container
+    .row.centered
+      %h3.logo.aligncenter
+        Chattermill
+      %h1
+        Close more deals with
+        %br>/
+        our awesome app.
+      .col-md-6.col-md-offset-3.mt
+        %a.btn.btn-lg.btn-green.demo{href: '#demo'} See demo
+        %a.btn.btn-lg.btn-green.scroll{href: '#intro'} Learn more
+    .row
+      .continue
+        %a.scroll-down.smoothScroll{href: '#intro'}
+          %i.ion-chevron-down
+/ / ********** CALL TO ACTION SECTION **********
+#cta
+  .container
+    .row
+      %h2 It's time to grab your customers attention properly. Let us help you.
+/ ********** INTRODUCTION SECTION **********
+.container.mt#intro{name: 'intro'}
+  .row
+    .col-md-6.col-md-offset-3.centered
+      %h2 Chattermill
+      %hr.aligncenter/
+      %h4 Get the signal out of noise
+  .row.mt
+    .col-md-6
+      %p
+        %i.ion-android-information.green.alignleft
+        We use cutting edge text analytics to show you the most important themes in your data and separate the positives from the negatives.
+      %p.mt
+        %i.ion-android-information.green.alignleft
+        We work with any data source. You can upload your own data or connect your accounts across the social networks. Twitter, Facebook, TripAdvisor... you name it.
+      %p.mt
+        %i.ion-android-information.green.alignleft
+        Get to know your audience in a completely new way with our proprietory profiler.
+    .col-md-6.of
+      %img.img-responsive.aligncenter{alt: "", "data-effect" => "slide-right", src: "../images/browser.png"}/
+/ ********** HOW IT WORKS SECTION **********
+#g.hidden{name: 'how-it-works'}
+  .container
+    .row
+      .col-md-6.col-md-offset-3.centered
+        %h2 How It Works
+        %hr.aligncenter/
+        %h4 We work hard so you don't have to
+    .row.mt
+      .col-md-4
+        %h4.green STEP 1
+        %p Connnect your account or create an ad hoc  project from the data you already have.
+        %h4.green.mt STEP 2
+        %p Get the insight immediately.
+      .col-md-4
+        %img.img-responsive.aligncenter{alt: "", "data-effect" => "slide-bottom", src: "../images/item.png"}/
+      .col-md-4
+        %h4.green STEP 3
+        %p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        %h4.green.mt STEP 4
+        %p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    .row.mt
+      .col-md-4.col-md-offset-4.centered
+        %a.btn.btn-lg.btn-green{href: '#demo'} See demo
+}
+/ ********** CALL TO ACTION SECTION **********
+#cta
+  .container
+    .row
+      %h2
+        More than
+        %b 65%
+        of users check their mail on a mobile device.
+      %h2
+        In 2014,
+        %b 40%
+        made a purchase through their smartphone.
+/ ********** DEMO SECTION **********
+.container.mt#demo
+  .row.mt.demo-row
+    .col-md-12
+      .demo-container
+        #ember-app
+
+/ ********** FEATURES SECTION - Part 2 **********
+#g
+  .container
+    .row.mt
+      .col-md-6.col-md-offset-3.centered
+        %h2 Features
+        %hr.aligncenter/
+        %h4 You will love these
+    .row.mt
+      .col-md-4.centered
+        %i.ion-chatboxes.green.big
+        %p.green Natural language processing
+        %p.text16 Custom technology that helps you to focus only on what is important.
+      .col-md-4.centered
+        %i.ion-happy.green.big
+        %p.green Sentiment analysis
+        %p.text16 Bleeding edge emotion detection lets you know when your customers are feeling.
+      .col-md-4.centered
+        %i.ion-ios-pulse-strong.green.big
+        %p.green Live dashboard
+        %p.text16 Stay ahead of market research using our beautifully designed real-time charts.
+    .row.mt
+      .col-md-4.centered
+        %i.ion-pound.green.big
+        %p.green Multiple source
+        %p.text16 We automatically pull data from many different sources including Twitter, TripAdvisor, Google + and many more.
+      .col-md-4.centered
+        %i.ion-arrow-graph-up-right.green.big
+        %p.green Predictive analytics
+        %p.text16 Get a glimpse of tomorrow through our sophisticated trend detection.
+      .col-md-4.centered
+        %i.ion-ios-contact-outline.green.big
+        %p.green Promoter scoring 
+        %p.text16 Some opinions resonate more than others. Find the customers who matter most for your growth.
+/ ********** TESTIMONIAL SECTION **********
+#testimonial.hidden
+  .container
+    .row.mt
+      .col-lg-8.col-lg-offset-2.centered
+        /
+          Carousel
+          \==================================================
+        #myCarousel.carousel.slide{"data-ride" => "carousel"}
+          .carousel-inner
+            .item.active
+              %img.img-circle.aligncenter{:alt => "First slide", :src => "../images/ui-01.jpg", :width => "120"}/
+              %h3 Mark Turin
+              %hr.aligncenter/
+              %p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+            .item
+              %img.img-circle.aligncenter{:alt => "Second slide", :src => "../images/ui-02.jpg", :width => "120"}/
+              %h3 Sarah Schmidt
+              %hr.aligncenter/
+              %p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+            .item
+              %img.img-circle.aligncenter{:alt => "Third slide", :src => "../images/ui-03.jpg", :width => "120"}/
+              %h3 Phil Carsons
+              %hr.aligncenter/
+              %p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+/ ********** REGISTER SECTION **********
+#g
+  .container
+    .row.mt
+      .col-md-6.col-md-offset-3.centered
+        %h2 Be the first to know
+        %hr.aligncenter/
+        %h4 Sign up for early access
+    .row
+      .col-md-6.col-md-offset-3.mt.centered
+        %form{action: "https://formkeep.com/f/511ad5818ad2", method: "post", role: "form", "accept-charset" => "UTF-8"}
+          %input{type: 'hidden', name: "utf8", value: "✓"}
+          %input.subscribe-input{name: "email", placeholder: "Enter your e-mail address...", required: "", :type => "email"}/
+          %button.btn.btn-lg.btn-green.subscribe-submit{type: "submit"} Subscribe
+
+.container
+  .row.mtb
+    .col-md-6.col-md-offset-3.centered
+      %p.text28
+        %a{:href => "http://twitter.com/chatter_mill"}
+          %i.ion-social-twitter
+      %hr.aligncenter/
+      %p Chattermill | Copyright 2015

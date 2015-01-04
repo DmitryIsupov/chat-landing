@@ -1,0 +1,19 @@
+{{#if theme}}
+  <div {{bind-attr class="theme.panelClass"}}>
+    <div class="panel-heading">{{theme.body}} <span class="theme-score alignRight">{{theme.sentimentScore}}</span></div>
+    <div class="panel-body">
+      <ul class="list-group" id="accordion" role="tablist" aria-multiselectable="true">
+        {{#each text in theme.texts}}
+          <li class="list-group-item">
+            <a data-toggle="collapse" data-parent="#accordion" aria-expanded="true" {{bind-attr href="text.linkId"}}>
+            {{text.summary}} <span class="theme-source-logo"><i class="ion-social-twitter green alignRight"></i></span>
+            </a>
+            <div {{bind-attr id="text.panelId"}} class="panel-collapse collapse" role="tabpanel">
+              {{text.body}}
+          </div>
+          </li>
+        {{/each}}
+      </ul>   
+    </div>
+  </div>
+{{/if}}
